@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Presentación</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">Bienvenido a mi carta de presentación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <!-- Botón para cambiar tema -->
+                <button id="btnTema" class="btn btn-outline-light ms-3">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+<br>
+<br>
+    <!-- Sección Inicio/Header -->
+    <section id="inicio" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <!-- Aquí irá tu foto -->
+                    <img src="foto.jpg" alt="Foto de perfil"
+                        class="img-fluid rounded-circle mb-3 foto-perfil">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">Lautaro Ignacio Ramirez Soto</h1>
+                    <h3 class="text-muted">Desarrollador Front-End</h3>
+                    <p class="lead">Desarrollador web en formación que transforma ideas en interfaces claras y funcionales. Apasionado por aprender, crear y mejorar la experiencia digital a través del código.</p>
+
+                    <!-- Información de contacto -->
+                    <div class="contacto-info mt-4">
+                        <p><i class="fas fa-envelope"></i> Lautaro97rs@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +56 9 6112 2968</p>
+                        <div class="redes-sociales">
+                            <a href="https://www.linkedin.com/in/lautaro-ignacio-ramirez-soto-b12b3b278/" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/lautaro97rs-max" class="btn btn-outline-dark"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-outline-info"><i class="fab fa-twitter"></i> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia y Formación -->
+<!-- EXPERIENCIA Y FORMACIÓN -->
+<section id="experiencia" class="section-padding bg-light">
+  <div class="container">
+
+   <h2 class="text-center mb-5">Experiencia y Formación</h2>
+
+<div class="row justify-content-center">
+  <!-- Experiencia Laboral -->
+  <div class="col-md-4 text-center mb-4">
+    <div class="card-desplegable">
+      <div class="card-header" onclick="toggleCard(this)">
+        <i class="fas fa-briefcase fa-3x mb-3"></i>
+        <h5>Experiencia Laboral</h5>
+        <i class="fas fa-chevron-down arrow-icon"></i>
+      </div>
+      
+      <div class="card-content">
+        <ul class="habilidad-list text-start">
+          <li>
+            <strong>Guardia de Seguridad</strong><br>
+            <span class="text-muted">Prosegur | 2025 - Actualidad</span>
+            <p class="mt-2">
+              Control de acceso vehicular y personal, resguardo de instalaciones y revisión de unidades.
+            </p>
+          </li>
+
+          <li class="mt-3">
+            <strong>Operario Logístico</strong><br>
+            <span class="text-muted">GXO Logistics | 2020 - 2024</span>
+            <p class="mt-2">
+              Liderazgo de procesos de despacho, generación de guías y optimización logística.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formación Académica -->
+  <div class="col-md-4 text-center mb-4">
+    <div class="card-desplegable">
+      <div class="card-header" onclick="toggleCard(this)">
+        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+        <h5>Formación Académica</h5>
+        <i class="fas fa-chevron-down arrow-icon"></i>
+      </div>
+      
+      <div class="card-content">
+        <ul class="habilidad-list text-start">
+          <li>
+            <strong>Educación Media Completa</strong><br>
+            <span class="text-muted">Liceo A-22 La Portada</span>
+            <p class="mt-2">
+              Formación científica humanista.
+            </p>
+          </li>
+
+          <li class="mt-3">
+            <strong>Front-End Trainee</strong><br>
+            <span class="text-muted">SENCE - Kibernum IT Academy | 2025</span>
+            <p class="mt-2">
+              Desarrollo de interfaces web con HTML, CSS, JavaScript y enfoque UX/UI.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Sección Habilidades -->
+<section id="habilidades" class="section-padding">
+  <div class="container">
+
+    <h2 class="text-center mb-5">Habilidades Destacadas</h2>
+
+    <div class="row justify-content-center">
+
+      <!-- Habilidades Técnicas -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="card-desplegable">
+          <div class="card-header" onclick="toggleCard(this)">
+            <i class="fas fa-code fa-3x mb-3"></i>
+            <h5>Habilidades Técnicas</h5>
+            <i class="fas fa-chevron-down arrow-icon"></i>
+          </div>
+
+          <div class="card-content">
+            <ul class="habilidad-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>UX / Accesibilidad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Habilidades Blandas -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="card-desplegable">
+          <div class="card-header" onclick="toggleCard(this)">
+            <i class="fas fa-users fa-3x mb-3"></i>
+            <h5>Habilidades Blandas</h5>
+            <i class="fas fa-chevron-down arrow-icon"></i>
+          </div>
+
+          <div class="card-content">
+            <ul class="habilidad-list">
+              <li>Liderazgo</li>
+              <li>Trabajo en equipo</li>
+              <li>Resolución de problemas</li>
+              <li>Adaptabilidad</li>
+              <li>Aprendizaje rápido</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Formulario de Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="formularioContacto">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre *</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje *</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                            <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensaje</button>
+                    </form>
+                    <div id="mensajeExito" class="alert alert-success mt-3 d-none">
+                        ¡Mensaje enviado con éxito!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-4">
+  <p>&copy; 2026 Lautaro Ramirez. Todos los derechos reservados.</p>
+  
+  <!-- Botón para volver al inicio -->
+  <a href="#inicio" class="btn btn-outline-light mt-3" aria-label="Volver al inicio">
+    <i class="fas fa-arrow-up"></i> Volver al inicio
+  </a>
+</footer>
+
+
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tu JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

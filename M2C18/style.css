@@ -1,0 +1,298 @@
+/* ===========================
+   VARIABLES GLOBALES
+   =========================== */
+:root {
+  --color-primario: #011c0885;
+  --color-secundario: #6c757d;
+  --color-fondo: #f8f9fa;
+  --color-texto: #212529;
+  --fuente-base: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ===========================
+   ESTILOS GENERALES
+   =========================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuente-base);
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+              url('body.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--color-texto);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+   TIPOGRAFÍA
+   =========================== */
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+.navbar {
+  background-color: var(--color-primario) !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* ===========================
+   SECCIONES
+   =========================== */
+.section-padding {
+  padding: 60px 20px;
+}
+
+.section-padding.bg-light {
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 10px;
+}
+
+/* ===========================
+   BOTONES
+   =========================== */
+.btn {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   ACORDEÓN
+   =========================== */
+.accordion-button {
+  background-color: var(--color-primario);
+  color: #fff;
+  font-weight: bold;
+}
+
+.accordion-button:hover {
+  background-color: #000000;
+}
+
+.accordion-body {
+  background-color: rgba(255,255,255,0.9);
+  border-left: 4px solid var(--color-primario);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer a.btn {
+  margin-top: 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+footer a.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* ===========================
+   ANIMACIONES
+   =========================== */
+/* Animación fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} 
+
+/* Animación slide-up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para aplicar fade-in */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Clase para aplicar slide-up */
+.slide-up {
+  animation: slideUp 1s ease forwards;
+}
+/* ===========================
+   MODO OSCURO
+   =========================== */ 
+
+
+.dark-mode {
+  --color-primario: #1e3a5f;  
+  --color-secundario: #495057;
+  --color-fondo: #121212;
+  --color-texto: #f1f1f1;
+} 
+.card-desplegable {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card-desplegable:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.card-header {
+  padding: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.card-header:hover {
+  background: #f8f9fa;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.card-desplegable.active .arrow-icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 2rem;
+}
+
+.card-desplegable.active .card-content {
+  max-height: 1000px;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.habilidad-list {
+  list-style: none;
+  padding: 0;
+}
+
+.habilidad-list li {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+*/HABILIDADES DESPLEGABLES */
+.card-desplegable {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.card-desplegable:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  border-left-color: #007bff;
+}
+
+.card-header {
+  padding: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+}
+
+.card-header:hover {
+  background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+}
+
+.card-header i:first-child {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #007bff;
+}
+
+.card-desplegable:hover .card-header i:first-child {
+  transform: scale(1.1);
+  color: #0056b3;
+}
+
+.card-header h5 {
+  transition: color 0.3s ease;
+  color: #333;
+  margin: 1rem 0 0 0;
+}
+
+.card-desplegable:hover .card-header h5 {
+  color: #007bff;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.card-desplegable:hover .arrow-icon {
+  color: #007bff;
+}
+
+.card-desplegable.active .arrow-icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 2rem;
+}
+
+.card-desplegable.active .card-content {
+  max-height: 1000px;
+}

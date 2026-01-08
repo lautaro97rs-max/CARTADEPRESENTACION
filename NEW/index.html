@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de usuario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1><b>Unete a nosotros</b></h1>
+      <p class="lead"><b>Crea tu cuenta — asegúrate de que la edad sea mayor de 18.</b></p>
+    </header>
+
+    <main class="card">
+      <form id="registerForm" novalidate>
+        <div class="field">
+          <label for="name"><b>Nombre</b></label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre">
+        </div>
+
+        <div class="field">
+          <label for="email"><b>Correo</b></label>
+          <input id="email" name="email" type="email" placeholder="tu@ejemplo.com">
+        </div>
+
+        <div class="field">
+          <label for="age"><b>Edad</b></label>
+          <input id="age" name="age" type="number" placeholder="Ej: 25" min="0">
+        </div>
+        <div class="field">
+          <label for="ciudad"><b>Ciudad</b></label>
+          <input id="ciudad" name="ciudad" type="text" placeholder="Tu ciudad">
+        </div>
+        <br>
+        <div class="field">
+          <label for="password"><b>Contraseña</b></label>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <input id="password" name="password" type="password" placeholder="Crea una contraseña segura"
+              style="flex:1;">
+            <button id="generateBtn" type="button" class="btn" style="width:auto; padding:8px 10px;">Generar</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword"><b>Confirmar contraseña</b></label>
+          <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Repite la contraseña">
+        </div>
+
+        <div class="field password-helpers" aria-hidden="false">
+          <div class="strength">
+            <label><b>Fortaleza:</b> <span id="strengthText">—</span></label>
+            <div id="strengthBar" class="strength-meter"></div>
+          </div>
+          <ul id="criteriaList">
+            <li data-criteria="length">Al menos 8 caracteres</li>
+            <li data-criteria="uppercase">Mayúscula (A-Z)</li>
+            <li data-criteria="lowercase">Minúscula (a-z)</li>
+            <li data-criteria="digit">Número (0-9)</li>
+            <li data-criteria="special">Símbolo (!@#$%)</li>
+          </ul>
+        </div>
+        <div class="actions">
+          <button id="submitBtn" type="button" class="btn">Validar y enviar</button>
+        </div>
+      </form>
+
+      <div id="message" class="message" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
