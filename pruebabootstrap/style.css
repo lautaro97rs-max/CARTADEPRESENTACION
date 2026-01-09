@@ -1,0 +1,30 @@
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Card contenedor */
+#experiencia .card {
+  background-color: #e9ecef; /* fondo externo */
+  border-radius: 26px;
+  transition: transform 0.3s ease;
+}
+
+
+/* Hover */ 
+#experiencia .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Fondo interno */
+#experiencia .card-body {
+  background-color: #2685e3;
+  color: #ffffff;
+}
+
+
+/* Título */
+#experiencia .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
